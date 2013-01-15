@@ -1,0 +1,60 @@
+*{
+  margin:0;
+  padding:0;
+  color:#252525;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html{
+  min-height:100%;
+  background:#efefef;
+  box-shadow:inset 0 0 200px #333;
+}
+
+body{
+  z-index:4;
+}
+
+article{
+  max-width:600px;
+  margin:48px auto;
+}
+
+section{
+  padding:23px;
+  border:1px solid #999;
+  box-shadow: 0 1px 24px #333;
+  margin-bottom:16px;
+}
+
+section h2{
+  font-size:48px;
+}
+
+section p{
+  font-size:24px;
+}
+.html{
+
+}
+.css{
+
+}
+.js{
+
+}
+.haml{
+
+}
+.scss{
+
+}
+.cs{
+
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+  right:0;
+}
