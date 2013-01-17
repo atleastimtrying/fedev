@@ -1,17 +1,7 @@
 
-  µ.load(function() {
-    µ.addElements('elements', ['html', 'css', 'js']);
-    µ.addElements('rubyElements', ['haml', 'scss', 'cs']);
-    µ.hideAll('rubyElements');
-    µ.addFn('toggle', function(evnt) {
-      if (µ.visible('elements')) {
-        µ.hideAll('elements');
-        µ.showAll('rubyElements');
-      } else {
-        µ.hideAll('rubyElements');
-        µ.showAll('elements');
-      }
-      return false;
+  $(function() {
+    return $('.title').click(function() {
+      $('section.showing').removeClass('showing');
+      return $(this).parent().addClass('showing');
     });
-    return µ.click('toggle');
   });
