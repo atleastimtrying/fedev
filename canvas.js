@@ -19,10 +19,10 @@
     }
 
     Canvas.prototype.clear = function(event) {
-      this.canvas.width = this.canvas.offsetWidth = this.canvas[0].width = document.width;
-      this.canvas.height = this.canvas.offsetHeight = this.canvas[0].height = document.height;
-      $('canvas').width(document.width);
-      return $('canvas').height(document.height);
+      this.canvas.width = this.canvas[0].width = $(document).width();
+      this.canvas.height = this.canvas[0].height = $(document).height();
+      $('canvas').width($(document).width());
+      return $('canvas').height($(document).height());
     };
 
     Canvas.prototype.fillStyle = function(colour) {

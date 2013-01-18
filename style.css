@@ -89,7 +89,11 @@ section h2{
   background-color:rgba(0,0,0,0);
   color:#ddd;
   font-size: 24px;
-  -webkit-transform: rotate(90deg);
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -moz-transform:rotate(90deg); 
+  -webkit-transform:rotate(90deg); 
+  -o-transform:rotate(90deg);
   position: absolute;
   right: 4px;
   top: 4px;

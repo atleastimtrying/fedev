@@ -3,6 +3,8 @@ class App
     @canvas = new Canvas()
     $(window).mousemove @mousemove
     $(window).bind 'touchmove', @mousemove
+    $(window).bind 'touchstart', @mousemove
+    $(window).bind 'touchend', @mousemove
 
   mousemove: (event)=>
     @canvas.clear()

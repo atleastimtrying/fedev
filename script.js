@@ -8,6 +8,8 @@
       this.mousemove = __bind(this.mousemove, this);      this.canvas = new Canvas();
       $(window).mousemove(this.mousemove);
       $(window).bind('touchmove', this.mousemove);
+      $(window).bind('touchstart', this.mousemove);
+      $(window).bind('touchend', this.mousemove);
     }
 
     App.prototype.mousemove = function(event) {

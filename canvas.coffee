@@ -7,10 +7,10 @@ class window.Canvas
     @clear()
 
   clear: (event)=>
-    @canvas.width = @canvas.offsetWidth = @canvas[0].width = document.width
-    @canvas.height = @canvas.offsetHeight = @canvas[0].height = document.height
-    $('canvas').width(document.width)
-    $('canvas').height(document.height)
+    @canvas.width = @canvas[0].width = $(document).width()
+    @canvas.height = @canvas[0].height = $(document).height()
+    $('canvas').width($(document).width())
+    $('canvas').height($(document).height())
 
   fillStyle:(colour)=>
     @context.fillStyle = colour
