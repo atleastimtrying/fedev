@@ -24,7 +24,6 @@
   })();
 
   $(function() {
-    window.app = new App;
     return $('section h2').click(function() {
       return $(this).parent().toggleClass('off');
     });

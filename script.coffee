@@ -13,7 +13,7 @@ class App
     @canvas.bothCircle event.pageX, event.pageY, 20
 
 $ ->
-  window.app = new App
+  #window.app = new App
   $('section h2').click ->
     $(@).parent().toggleClass 'off'
   
