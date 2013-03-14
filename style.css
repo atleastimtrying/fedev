@@ -49,29 +49,24 @@ header p{
   font-weight:300;
 }
 section{
-  background-color:#666;
-  background-color:rgba(154, 177, 190, 0.7);
+  background-color:white;
   border-radius:2px;
   z-index:1;
   margin-bottom:24px;
   padding:24px;
-  color:white;
+  color:#333;
   max-width:824px;
-  box-shadow:0 4px 16px rgba(0,0,0,0.2);
-  -webkit-transition:background-color 1s ease-out;
-  -moz-transition:background-color 1s ease-out;
-  -ms-transition:background-color 1s ease-out;
-  transition:background-color 1s ease-out;
-}
-section:hover{
-  background-color:rgb(41, 89, 121);
+  box-shadow:4px 4px 4px rgba(0,0,0,0.2);
+  -webkit-transition:color 1s ease-out;
+  -moz-transition:color 1s ease-out;
+  -ms-transition:color 1s ease-out;
+  transition:color 1s ease-out;
 }
 section h2{
   font-size: 24px;
   line-height:32px;
   margin-bottom:8px;
-  font-family:'Lato', sans-serif;
-  font-weight:400;
+  color:rgb(41, 89, 121);
 }
 
 section p{
