@@ -16,6 +16,10 @@ footer{
 }
 article{
   padding:0 24px;
+  transition: padding 0.5s ease-out;
+  -webkit-transition: padding 0.5s ease-out;
+  -moz-transition: padding 0.5s ease-out;
+  -transition: padding 0.5s ease-out;
 }
 
 header{
@@ -24,6 +28,10 @@ header{
   padding:24px;
   color: rgba(0,0,0,0.8);
   text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+  transition: padding 0.5s ease-out;
+  -webkit-transition: padding 0.5s ease-out;
+  -moz-transition: padding 0.5s ease-out;
+  -transition: padding 0.5s ease-out;
 }
 
 h1{
@@ -47,6 +55,13 @@ header p{
   max-width:728px;
   font-family:'Lato', sans-serif;
   font-weight:300;
+}
+header p a{
+  color:#334;
+  text-decoration:none;
+}
+header p a:hover{
+  text-decoration:underline;
 }
 section{
   background-color:white;
@@ -85,8 +100,8 @@ footer{
   padding:24px;
   font-size:16px;
   line-height:16px;
-  color:#333;
-  background:rgba(255,255,255,0.5);
+  color:#666;
+  text-shadow:1px 1px 1px white;
   text-align:right;
 }
 footer p{
@@ -94,7 +109,7 @@ footer p{
 }
 footer a{
   text-decoration: none;
-  color:#333;
+  color:#101015;
 }
 @media all and (max-width: 496px){
   article{
@@ -209,5 +224,11 @@ footer a{
     left: auto;
     right:-48px;
     background:rgba(50,50,150,0.5);
+  }
+  header{
+    padding:24px 72px;
+  }
+  article{
+    padding:0 72px;
   }
 }
